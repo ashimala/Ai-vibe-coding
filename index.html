@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - E-Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>LearnHub</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="nav-courses">Courses</a></li>
+                    <li><a href="#" id="nav-dashboard">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-outline" id="login-btn">Login</button>
+                <button class="btn btn-primary" id="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Expand Your Knowledge with LearnHub</h1>
+            <p>Access high-quality courses from industry experts</p>
+            <button class="btn btn-primary" id="explore-courses">Explore Courses</button>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="courses-section">
+            <h2 class="section-title">Featured Courses</h2>
+            <div class="courses-grid" id="courses-grid">
+                <!-- Courses will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="course-details-section">
+            <!-- Course details will be dynamically inserted here -->
+        </section>
+
+        <section id="user-dashboard-section">
+            <!-- User dashboard will be dynamically inserted here -->
+        </section>
+
+        <div class="auth-container" id="login-form">
+            <h2>Login to Your Account</h2>
+            <form id="login-form-element">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+            </form>
+            <div class="auth-toggle">
+                <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+            </div>
+        </div>
+
+        <div class="auth-container" id="signup-form">
+            <h2>Create an Account</h2>
+            <form id="signup-form-element">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign Up</button>
+            </form>
+            <div class="auth-toggle">
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 LearnHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
